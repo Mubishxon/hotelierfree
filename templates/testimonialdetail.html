@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                        <p>{{x.bio}}</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="{{x.img.url}}" style="width: 45px; height: 45px;">
+                            <div class="ps-3">
+                               <a href="{% url 'testimonialdetail' x.id %}"></a><h6 class="fw-bold mb-1">{{x.name}}</h6>
+                                <small>Tadbirkor</small>
+                            </div>
+                        </div>
+                        <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
+                    </div>
+{% endblock content %}

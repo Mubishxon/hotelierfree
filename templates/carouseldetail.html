@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="carousel-item active">
+                        <img class="w-100" src="{{x.img.url}}" alt="Image">
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                            <div class="p-3" style="max-width: 700px;">
+                                <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Hashamatli yashash</h6>
+                                <a href="{%  url 'carouseldetail' x.id %}"></a><h1 class="display-3 text-white mb-4 animated slideInDown">{{x.name}}</h1>
+                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Bizning xonalarimiz</a>
+                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Xona bron qiling</a>
+                            </div>
+                        </div>
+                    </div>
+{% endblock content %}

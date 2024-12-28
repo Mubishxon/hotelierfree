@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+ <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title text-center text-primary text-uppercase">Bizning xizmatlarimiz</h6>
+                    <a href="{% url 'servicedetail' x.id%}"></a><h1 class="mb-5"><span class="text-primary text-uppercase">Bizning xizmatlarimizni kashf eting</span></h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-hotel fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">Xonalar va Apartamentlar</h5>
+                            <p class="text-body mb-0">{{x.bio}}</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-utensils fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">Taomlar va Restoran</h5>
+                            <p class="text-body mb-0">Mazali taomlar va ajoyib xizmat bilan ta'minlangan restoranimizda ovqatlaning.</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-spa fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">Spa va Fitnes</h5>
+                            <p class="text-body mb-0">Dam olish va sog'liqni saqlash uchun Spa va fitnes markazimizdan foydalaning.</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-swimmer fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">Sport va O'yinlar</h5>
+                            <p class="text-body mb-0">Eng yaxshi sport faoliyatlari va o'yinlar bilan dam oling.</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-glass-cheers fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">Tadbirlar va Partiyalar</h5>
+                            <p class="text-body mb-0">Unutilmas tadbirlar va ajoyib partiyalar uchun biz bilan bog'laning.</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-dumbbell fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">Sport zali va Yoga</h5>
+                            <p class="text-body mb-0">Sport zali va Yoga: Jismoniy va ruhiy salomatlikni yaxshilash, energiya va tinchlikni topish.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+{% endblock content %}
